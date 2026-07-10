@@ -2,7 +2,7 @@
 # lesson provisions REAL Cloud DNS resources (a public google_dns_managed_zone
 # with DNSSEC, several google_dns_record_set, and a private split-horizon zone
 # bound to a VPC). `terraform fmt/validate/init` run offline; `plan/apply` need
-# GCP credentials (see .e2e/agnostic/*-require-creds.md).
+# GCP credentials (see .e2e/agnostic/flow-3-apply-done.md and siblings).
 
 terraform {
   required_version = ">= 1.5"

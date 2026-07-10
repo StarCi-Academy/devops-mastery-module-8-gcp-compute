@@ -15,3 +15,7 @@ terraform validate
 - `terraform validate` → `Success! The configuration is valid.`
 
 Bộ argument hợp lệ với schema provider `hashicorp/google ~> 6.0`: `dnssec_config.state` nhận `on/off/transfer`; `visibility` nhận `public/private`; `default_key_specs.key_type` nhận `keySigning/zoneSigning`; record_set `type`/`ttl`/`rrdatas` hợp lệ. Chạy hoàn toàn offline, không gọi GCP API.
+
+## Re-verified (2026-07-10)
+
+Chạy lại `terraform fmt -check -diff -no-color` (exit 0, no diff) + `terraform validate -no-color` → `Success! The configuration is valid.` — kết quả không đổi.
